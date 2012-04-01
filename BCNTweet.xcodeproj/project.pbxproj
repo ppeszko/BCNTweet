@@ -14,7 +14,7 @@
 		D09D63251528A37500B936D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63241528A37500B936D7 /* main.m */; };
 		D09D63291528A37500B936D7 /* LTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63281528A37500B936D7 /* LTAAppDelegate.m */; };
 		D09D632C1528A37500B936D7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */; };
-		D09D632F1528A37500B936D7 /* LTAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D632E1528A37500B936D7 /* LTAFirstViewController.m */; };
+		D09D632F1528A37500B936D7 /* LTATweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D632E1528A37500B936D7 /* LTATweetsViewController.m */; };
 		D09D63311528A37500B936D7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D09D63301528A37500B936D7 /* first.png */; };
 		D09D63331528A37500B936D7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D09D63321528A37500B936D7 /* first@2x.png */; };
 		D09D63361528A37500B936D7 /* LTASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63351528A37500B936D7 /* LTASecondViewController.m */; };
@@ -25,6 +25,9 @@
 		D09D63441528A37600B936D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D631A1528A37500B936D7 /* Foundation.framework */; };
 		D09D634C1528A37600B936D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D09D634A1528A37600B936D7 /* InfoPlist.strings */; };
 		D09D634F1528A37600B936D7 /* BCNTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D634E1528A37600B936D7 /* BCNTweetTests.m */; };
+		D09D63591528B4B900B936D7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63581528B4B900B936D7 /* Accounts.framework */; };
+		D09D635B1528B4C200B936D7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D635A1528B4C200B936D7 /* Twitter.framework */; };
+		D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63621528B9FA00B936D7 /* LTATweetCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,27 +45,31 @@
 		D09D63181528A37500B936D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D09D631A1528A37500B936D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D09D631C1528A37500B936D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D09D63201528A37500B936D7 /* BCNTweet-Info.plist */ = {isa = PBXFileReference; path = "BCNTweet-Info.plist"; sourceTree = "<group>"; };
+		D09D63201528A37500B936D7 /* BCNTweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BCNTweet-Info.plist"; sourceTree = "<group>"; };
 		D09D63221528A37500B936D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D09D63241528A37500B936D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D09D63261528A37500B936D7 /* BCNTweet-Prefix.pch */ = {isa = PBXFileReference; path = "BCNTweet-Prefix.pch"; sourceTree = "<group>"; };
-		D09D63271528A37500B936D7 /* LTAAppDelegate.h */ = {isa = PBXFileReference; path = LTAAppDelegate.h; sourceTree = "<group>"; };
+		D09D63261528A37500B936D7 /* BCNTweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BCNTweet-Prefix.pch"; sourceTree = "<group>"; };
+		D09D63271528A37500B936D7 /* LTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAAppDelegate.h; sourceTree = "<group>"; };
 		D09D63281528A37500B936D7 /* LTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAAppDelegate.m; sourceTree = "<group>"; };
 		D09D632B1528A37500B936D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D09D632D1528A37500B936D7 /* LTAFirstViewController.h */ = {isa = PBXFileReference; path = LTAFirstViewController.h; sourceTree = "<group>"; };
-		D09D632E1528A37500B936D7 /* LTAFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAFirstViewController.m; sourceTree = "<group>"; };
+		D09D632D1528A37500B936D7 /* LTATweetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTATweetsViewController.h; sourceTree = "<group>"; };
+		D09D632E1528A37500B936D7 /* LTATweetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTATweetsViewController.m; sourceTree = "<group>"; };
 		D09D63301528A37500B936D7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D09D63321528A37500B936D7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		D09D63341528A37500B936D7 /* LTASecondViewController.h */ = {isa = PBXFileReference; path = LTASecondViewController.h; sourceTree = "<group>"; };
+		D09D63341528A37500B936D7 /* LTASecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTASecondViewController.h; sourceTree = "<group>"; };
 		D09D63351528A37500B936D7 /* LTASecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTASecondViewController.m; sourceTree = "<group>"; };
 		D09D63371528A37500B936D7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		D09D63391528A37500B936D7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		D09D63401528A37500B936D7 /* BCNTweetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCNTweetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D63411528A37600B936D7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D09D63491528A37600B936D7 /* BCNTweetTests-Info.plist */ = {isa = PBXFileReference; path = "BCNTweetTests-Info.plist"; sourceTree = "<group>"; };
+		D09D63491528A37600B936D7 /* BCNTweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BCNTweetTests-Info.plist"; sourceTree = "<group>"; };
 		D09D634B1528A37600B936D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D09D634D1528A37600B936D7 /* BCNTweetTests.h */ = {isa = PBXFileReference; path = BCNTweetTests.h; sourceTree = "<group>"; };
+		D09D634D1528A37600B936D7 /* BCNTweetTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCNTweetTests.h; sourceTree = "<group>"; };
 		D09D634E1528A37600B936D7 /* BCNTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCNTweetTests.m; sourceTree = "<group>"; };
+		D09D63581528B4B900B936D7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D09D635A1528B4C200B936D7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D09D63611528B9FA00B936D7 /* LTATweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTATweetCell.h; sourceTree = "<group>"; };
+		D09D63621528B9FA00B936D7 /* LTATweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTATweetCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09D635B1528B4C200B936D7 /* Twitter.framework in Frameworks */,
+				D09D63591528B4B900B936D7 /* Accounts.framework in Frameworks */,
 				D09D63191528A37500B936D7 /* UIKit.framework in Frameworks */,
 				D09D631B1528A37500B936D7 /* Foundation.framework in Frameworks */,
 				D09D631D1528A37500B936D7 /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +101,8 @@
 		D09D63091528A37500B936D7 = {
 			isa = PBXGroup;
 			children = (
+				D09D635A1528B4C200B936D7 /* Twitter.framework */,
+				D09D63581528B4B900B936D7 /* Accounts.framework */,
 				D09D631E1528A37500B936D7 /* BCNTweet */,
 				D09D63471528A37600B936D7 /* BCNTweetTests */,
 				D09D63171528A37500B936D7 /* Frameworks */,
@@ -125,8 +136,10 @@
 				D09D63271528A37500B936D7 /* LTAAppDelegate.h */,
 				D09D63281528A37500B936D7 /* LTAAppDelegate.m */,
 				D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */,
-				D09D632D1528A37500B936D7 /* LTAFirstViewController.h */,
-				D09D632E1528A37500B936D7 /* LTAFirstViewController.m */,
+				D09D632D1528A37500B936D7 /* LTATweetsViewController.h */,
+				D09D632E1528A37500B936D7 /* LTATweetsViewController.m */,
+				D09D63611528B9FA00B936D7 /* LTATweetCell.h */,
+				D09D63621528B9FA00B936D7 /* LTATweetCell.m */,
 				D09D63301528A37500B936D7 /* first.png */,
 				D09D63321528A37500B936D7 /* first@2x.png */,
 				D09D63341528A37500B936D7 /* LTASecondViewController.h */,
@@ -281,8 +294,9 @@
 			files = (
 				D09D63251528A37500B936D7 /* main.m in Sources */,
 				D09D63291528A37500B936D7 /* LTAAppDelegate.m in Sources */,
-				D09D632F1528A37500B936D7 /* LTAFirstViewController.m in Sources */,
+				D09D632F1528A37500B936D7 /* LTATweetsViewController.m in Sources */,
 				D09D63361528A37500B936D7 /* LTASecondViewController.m in Sources */,
+				D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

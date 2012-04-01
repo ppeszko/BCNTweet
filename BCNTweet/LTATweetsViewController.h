@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LTAFirstViewController : UIViewController
+@interface LTATweetsViewController : UITableViewController
 
 @end
