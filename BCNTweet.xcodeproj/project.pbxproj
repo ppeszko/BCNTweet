@@ -28,6 +28,8 @@
 		D09D63591528B4B900B936D7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63581528B4B900B936D7 /* Accounts.framework */; };
 		D09D635B1528B4C200B936D7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D635A1528B4C200B936D7 /* Twitter.framework */; };
 		D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63621528B9FA00B936D7 /* LTATweetCell.m */; };
+		D0E6BD31152F259500282F52 /* ProfileImage_Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */; };
+		D0E6BD32152F259500282F52 /* ProfileImage_Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		D09D635A1528B4C200B936D7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		D09D63611528B9FA00B936D7 /* LTATweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTATweetCell.h; sourceTree = "<group>"; };
 		D09D63621528B9FA00B936D7 /* LTATweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTATweetCell.m; sourceTree = "<group>"; };
+		D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileImage_Default.png; sourceTree = "<group>"; };
+		D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ProfileImage_Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				D09D63281528A37500B936D7 /* LTAAppDelegate.m */,
 				D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */,
 				D09D632D1528A37500B936D7 /* LTATweetsViewController.h */,
+				D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */,
+				D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */,
 				D09D632E1528A37500B936D7 /* LTATweetsViewController.m */,
 				D09D63611528B9FA00B936D7 /* LTATweetCell.h */,
 				D09D63621528B9FA00B936D7 /* LTATweetCell.m */,
@@ -258,6 +264,8 @@
 				D09D63331528A37500B936D7 /* first@2x.png in Resources */,
 				D09D63381528A37500B936D7 /* second.png in Resources */,
 				D09D633A1528A37500B936D7 /* second@2x.png in Resources */,
+				D0E6BD31152F259500282F52 /* ProfileImage_Default.png in Resources */,
+				D0E6BD32152F259500282F52 /* ProfileImage_Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +474,7 @@
 				D09D63541528A37600B936D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D09D63551528A37600B936D7 /* Build configuration list for PBXNativeTarget "BCNTweetTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +483,7 @@
 				D09D63571528A37600B936D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

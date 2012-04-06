@@ -23,7 +23,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Jlw-kF-JtX">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ProfileImage_Default.png" id="Jlw-kF-JtX">
                                             <rect key="frame" x="7" y="27" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -109,6 +109,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ProfileImage_Default.png" width="40" height="40"/>
         <image name="first" width="16" height="16"/>
     </resources>
     <classes>

@@ -62,8 +62,36 @@
 {
     static NSString *CellIdentifier = @"TweetCell";
     LTATweetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NSDictionary *currentTweet = [tweets objectAtIndex:indexPath.row];
+    NSDictionary *currentUser = [currentTweet objectForKey:@"user"];
+    NSString  *userName = [currentUser objectForKey:@"name"];
 
-    cell.userNameLabel.text = @"Here";
+    cell.userNameLabel.text = userName;
+    cell.tweetLabel.text = [currentTweet objectForKey:@"text"];
+
+    LTAAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    UIImage *profileImage;
+    if ((profileImage = [appDelegate.profileImages objectForKey:userName])) {
+        cell.userImage.image = profileImage;
+    } else {
+        dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(concurrentQueue, ^{
+            NSURL *imageURL = [NSURL URLWithString:[currentUser objectForKey:@"profile_image_url"]];
+            __block UIImage *userImage;
+
+            dispatch_sync(concurrentQueue, ^{
+                NSData *imageData;
+                imageData = [NSData dataWithContentsOfURL:imageURL];
+                userImage = [UIImage imageWithData:imageData];
+
+                [appDelegate.profileImages setObject:userImage forKey:userName];
+            });
+
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                cell.userImage.image = userImage;
+            });
+        });
+    }
 
     return cell;
 }
@@ -103,8 +131,8 @@
                                                       otherButtonTitles:nil];
             [alertView show];
         }
-     application.networkActivityIndicatorVisible = NO;
-     }];
+        application.networkActivityIndicatorVisible = NO;
+    }];
 }
 
 - (void)updateFeed:(id)feedData
