@@ -30,6 +30,7 @@
 		D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63621528B9FA00B936D7 /* LTATweetCell.m */; };
 		D0E6BD31152F259500282F52 /* ProfileImage_Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */; };
 		D0E6BD32152F259500282F52 /* ProfileImage_Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */; };
+		D0E6BD36152F4E0100282F52 /* LTAMentionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6BD35152F4E0100282F52 /* LTAMentionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		D09D63621528B9FA00B936D7 /* LTATweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTATweetCell.m; sourceTree = "<group>"; };
 		D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileImage_Default.png; sourceTree = "<group>"; };
 		D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ProfileImage_Default@2x.png"; sourceTree = "<group>"; };
+		D0E6BD34152F4E0100282F52 /* LTAMentionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAMentionsViewController.h; sourceTree = "<group>"; };
+		D0E6BD35152F4E0100282F52 /* LTAMentionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAMentionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,21 +140,18 @@
 		D09D631E1528A37500B936D7 /* BCNTweet */ = {
 			isa = PBXGroup;
 			children = (
+				D0E6BD33152F4D9C00282F52 /* Assets */,
+				D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */,
+				D0E6BD34152F4E0100282F52 /* LTAMentionsViewController.h */,
+				D0E6BD35152F4E0100282F52 /* LTAMentionsViewController.m */,
 				D09D63271528A37500B936D7 /* LTAAppDelegate.h */,
 				D09D63281528A37500B936D7 /* LTAAppDelegate.m */,
-				D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */,
 				D09D632D1528A37500B936D7 /* LTATweetsViewController.h */,
-				D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */,
-				D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */,
 				D09D632E1528A37500B936D7 /* LTATweetsViewController.m */,
 				D09D63611528B9FA00B936D7 /* LTATweetCell.h */,
 				D09D63621528B9FA00B936D7 /* LTATweetCell.m */,
-				D09D63301528A37500B936D7 /* first.png */,
-				D09D63321528A37500B936D7 /* first@2x.png */,
 				D09D63341528A37500B936D7 /* LTASecondViewController.h */,
 				D09D63351528A37500B936D7 /* LTASecondViewController.m */,
-				D09D63371528A37500B936D7 /* second.png */,
-				D09D63391528A37500B936D7 /* second@2x.png */,
 				D09D631F1528A37500B936D7 /* Supporting Files */,
 			);
 			path = BCNTweet;
@@ -185,6 +185,19 @@
 				D09D634A1528A37600B936D7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E6BD33152F4D9C00282F52 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6BD2F152F259500282F52 /* ProfileImage_Default.png */,
+				D0E6BD30152F259500282F52 /* ProfileImage_Default@2x.png */,
+				D09D63301528A37500B936D7 /* first.png */,
+				D09D63321528A37500B936D7 /* first@2x.png */,
+				D09D63371528A37500B936D7 /* second.png */,
+				D09D63391528A37500B936D7 /* second@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +318,7 @@
 				D09D632F1528A37500B936D7 /* LTATweetsViewController.m in Sources */,
 				D09D63361528A37500B936D7 /* LTASecondViewController.m in Sources */,
 				D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */,
+				D0E6BD36152F4E0100282F52 /* LTAMentionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
