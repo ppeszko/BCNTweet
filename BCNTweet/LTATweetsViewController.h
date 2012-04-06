@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LTAMainListViewController.h"
 
-@interface LTATweetsViewController : UITableViewController
+@interface LTATweetsViewController : LTAMainListViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//  LTAMentionsViewController.h
+//  LTAMainListViewController.h
 //  BCNTweet
 //
 //  Created by Patryk Filip Peszko on 4/6/12.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LTAMainListViewController.h"
 
-@interface LTAMentionsViewController : LTAMainListViewController
+@interface LTAMainListViewController : UITableViewController
 
 @end
