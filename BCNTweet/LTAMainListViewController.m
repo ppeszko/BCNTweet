@@ -9,6 +9,7 @@
 #import "LTAMainListViewController.h"
 #import "LTATweetCell.h"
 #import "LTAAppDelegate.h"
+#import "LTAProfileViewController.h"
 #import <Twitter/Twitter.h>
 
 @interface LTAMainListViewController () {
@@ -69,9 +70,11 @@
     NSDictionary *currentTweet = [tweets objectAtIndex:indexPath.row];
     NSDictionary *currentUser = [currentTweet objectForKey:@"user"];
     NSString  *userName = [currentUser objectForKey:@"name"];
+    NSString *screenName = [currentUser objectForKey:@"screen_name"];
 
     cell.userNameLabel.text = userName;
     cell.tweetLabel.text = [currentTweet objectForKey:@"text"];
+    cell.screenName = screenName;
 
     LTAAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     UIImage *profileImage;
@@ -129,7 +132,7 @@
             }
         } else {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                message:[jsonError localizedDescription]
+                                                                message:[error localizedDescription]
                                                                delegate:nil
                                                       cancelButtonTitle:@"OK"
                                                       otherButtonTitles:nil];
@@ -144,6 +147,13 @@
     tweets = feedData;
     [self.tableView reloadData];
     NSLog(@"feed data %@", feedData);
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LTATweetCell *tweetCell = sender;
+    LTAProfileViewController *profileViewController = [segue destinationViewController];
+    profileViewController.screenName = tweetCell.screenName;
 }
 
 @end

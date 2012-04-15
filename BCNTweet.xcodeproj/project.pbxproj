@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D01B5E74152F50C70085EB02 /* LTAMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B5E73152F50C70085EB02 /* LTAMainListViewController.m */; };
+		D01B5E78152F91B80085EB02 /* LTAProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B5E77152F91B80085EB02 /* LTAProfileViewController.m */; };
 		D09D63191528A37500B936D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63181528A37500B936D7 /* UIKit.framework */; };
 		D09D631B1528A37500B936D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D631A1528A37500B936D7 /* Foundation.framework */; };
 		D09D631D1528A37500B936D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D631C1528A37500B936D7 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		D01B5E72152F50C70085EB02 /* LTAMainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAMainListViewController.h; sourceTree = "<group>"; };
 		D01B5E73152F50C70085EB02 /* LTAMainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAMainListViewController.m; sourceTree = "<group>"; };
+		D01B5E76152F91B80085EB02 /* LTAProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAProfileViewController.h; sourceTree = "<group>"; };
+		D01B5E77152F91B80085EB02 /* LTAProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAProfileViewController.m; sourceTree = "<group>"; };
 		D09D63141528A37500B936D7 /* BCNTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCNTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D63181528A37500B936D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D09D631A1528A37500B936D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,8 @@
 				D09D63621528B9FA00B936D7 /* LTATweetCell.m */,
 				D09D63341528A37500B936D7 /* LTASecondViewController.h */,
 				D09D63351528A37500B936D7 /* LTASecondViewController.m */,
+				D01B5E76152F91B80085EB02 /* LTAProfileViewController.h */,
+				D01B5E77152F91B80085EB02 /* LTAProfileViewController.m */,
 				D09D631F1528A37500B936D7 /* Supporting Files */,
 			);
 			path = BCNTweet;
@@ -325,6 +330,7 @@
 				D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */,
 				D0E6BD36152F4E0100282F52 /* LTAMentionsViewController.m in Sources */,
 				D01B5E74152F50C70085EB02 /* LTAMainListViewController.m in Sources */,
+				D01B5E78152F91B80085EB02 /* LTAProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

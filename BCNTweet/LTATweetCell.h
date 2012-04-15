@@ -13,5 +13,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *tweetLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *userImage;
 @property (nonatomic, weak) IBOutlet UILabel *userNameLabel;
+@property (nonatomic, strong) NSString *screenName;
 
 @end

@@ -13,6 +13,7 @@
 @synthesize userImage = _userImage;
 @synthesize userNameLabel = _userNameLabel;
 @synthesize tweetLabel = _tweetLabel;
+@synthesize screenName = _screenName;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
