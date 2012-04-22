@@ -54,6 +54,7 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tweets" id="h9B-sz-dIv">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ejd-Dk-llE"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="FVX-hE-NXw">
                             <connections>
                                 <action selector="tweet:" destination="2" id="VSy-D1-Qje"/>
@@ -214,6 +215,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CJJ-sb-iPZ"/>
                     <connections>
                         <outlet property="description" destination="5rd-qb-u0y" id="wrE-2Z-610"/>
                         <outlet property="favoritesCount" destination="r1M-59-re2" id="LVc-eG-lQK"/>
@@ -306,6 +308,7 @@
                 <relationship kind="outlet" name="followersCount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="followingCount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="profileName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profileNavigationItem" candidateClass="UINavigationItem"/>
                 <relationship kind="outlet" name="tweetsCount" candidateClass="UILabel"/>
             </relationships>
         </class>
