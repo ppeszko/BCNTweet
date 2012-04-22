@@ -154,6 +154,12 @@
     LTATweetCell *tweetCell = sender;
     LTAProfileViewController *profileViewController = [segue destinationViewController];
     profileViewController.screenName = tweetCell.screenName;
+    profileViewController.delegate = self;
+}
+
+- (void)didFinished:(LTAProfileViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

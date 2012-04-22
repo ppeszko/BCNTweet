@@ -48,12 +48,12 @@
                                     <outlet property="tweetLabel" destination="s3k-sk-c8Q" id="usV-DV-xIi"/>
                                     <outlet property="userImage" destination="Jlw-kF-JtX" id="bDj-q1-7fd"/>
                                     <outlet property="userNameLabel" destination="UV7-l2-YNJ" id="lsU-Fr-NOl"/>
-                                    <segue destination="V9b-wu-4Lm" kind="modal" identifier="ViewProfile" id="om0-5w-Vdf"/>
+                                    <segue destination="V9b-wu-4Lm" kind="modal" identifier="ViewProfile" modalTransitionStyle="flipHorizontal" id="om0-5w-Vdf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Tweets" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Tweets" image="chat.png" id="7"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
@@ -100,12 +100,12 @@
                                     <outlet property="tweetLabel" destination="ouI-V8-JzP" id="beJ-dj-kfS"/>
                                     <outlet property="userImage" destination="lgv-zR-wPM" id="M87-Bz-An2"/>
                                     <outlet property="userNameLabel" destination="LH9-Te-cbU" id="lHK-d8-VN5"/>
-                                    <segue destination="V9b-wu-4Lm" kind="modal" identifier="ViewProfile" id="RmF-57-kF1"/>
+                                    <segue destination="V9b-wu-4Lm" kind="modal" identifier="ViewProfile" modalTransitionStyle="flipHorizontal" id="RmF-57-kF1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Mentions" id="iKl-uF-Tpx"/>
+                    <tabBarItem key="tabBarItem" title="Mentions" image="persondot.png" id="iKl-uF-Tpx"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="472"/>
@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="HKO-H1-1T5"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnify.png" id="HKO-H1-1T5"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="1088"/>
@@ -258,7 +258,9 @@
     </scenes>
     <resources>
         <image name="ProfileImage_Default.png" width="40" height="40"/>
-        <image name="first" width="16" height="16"/>
+        <image name="chat.png" width="24" height="22"/>
+        <image name="magnify.png" width="24" height="24"/>
+        <image name="persondot.png" width="24" height="26"/>
     </resources>
     <classes>
         <class className="LTAMainListViewController" superclassName="UITableViewController">
@@ -297,6 +299,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="om0-5w-Vdf"/>
+        <segue reference="RmF-57-kF1"/>
     </inferredMetricsTieBreakers>
 </document>

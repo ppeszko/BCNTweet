@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LTAProfileViewController.h"
 
-@interface LTAMainListViewController : UITableViewController
+@interface LTAMainListViewController : UITableViewController <LTAProfileViewControllerDelegate>
 
 @end

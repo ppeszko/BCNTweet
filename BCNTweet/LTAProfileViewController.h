@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class LTAProfileViewController;
+
+@protocol LTAProfileViewControllerDelegate <NSObject>
+
+- (void)didFinished:(LTAProfileViewController *)controller;
+
+@end
+
 @interface LTAProfileViewController : UIViewController
+
+@property (weak, nonatomic) id <LTAProfileViewControllerDelegate> delegate;
+
 @property (strong, nonatomic) NSString *screenName;
 @property (weak, nonatomic) IBOutlet UILabel *profileName;
 @property (weak, nonatomic) IBOutlet UILabel *description;

@@ -18,6 +18,8 @@
 
 @implementation LTAProfileViewController
 
+@synthesize delegate = _delegate;
+
 @synthesize screenName = _screenName;
 @synthesize profileName = _profileName;
 @synthesize description = _description;
@@ -39,6 +41,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     [self loadUser];
 }
 
@@ -110,5 +113,6 @@
 }
 
 - (IBAction)close:(id)sender {
+    [self.delegate didFinished:self];
 }
 @end
