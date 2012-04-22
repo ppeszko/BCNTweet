@@ -162,4 +162,16 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)tweet:(id)sender
+{
+    NSLog(@"tweeting in progress");
+    if ([TWTweetComposeViewController canSendTweet]) {
+        TWTweetComposeViewController *tweetController;
+        tweetController = [[TWTweetComposeViewController alloc] init];
+        [tweetController setInitialText:@"Hello from bcn-coding-bootcamp"];
+
+        [self presentModalViewController:tweetController animated:YES];
+    }
+}
+
 @end
