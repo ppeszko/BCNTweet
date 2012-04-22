@@ -174,4 +174,10 @@
     }
 }
 
+- (void)refresh:(id)sender
+{
+    NSLog(@"refreshing");
+    [self getFeed];
+}
+
 @end

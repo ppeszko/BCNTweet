@@ -12,5 +12,6 @@
 @interface LTAMainListViewController : UITableViewController <LTAProfileViewControllerDelegate>
 
 - (IBAction)tweet:(id)sender;
+- (IBAction)refresh:(id)sender;
 
 @end

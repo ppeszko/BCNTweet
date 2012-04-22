@@ -54,7 +54,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tweets" id="h9B-sz-dIv">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="ejd-Dk-llE"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="ejd-Dk-llE">
+                            <connections>
+                                <action selector="refresh:" destination="2" id="c4D-6H-IBI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="FVX-hE-NXw">
                             <connections>
                                 <action selector="tweet:" destination="2" id="VSy-D1-Qje"/>
@@ -293,6 +297,7 @@
         <class className="LTAMainListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LTAMainListViewController.h"/>
             <relationships>
+                <relationship kind="action" name="refresh:"/>
                 <relationship kind="action" name="tweet:"/>
             </relationships>
         </class>
