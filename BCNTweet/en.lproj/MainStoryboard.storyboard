@@ -170,28 +170,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nfy-4M-Pgu">
-                                <rect key="frame" x="139" y="152" width="42" height="21"/>
+                                <rect key="frame" x="139" y="152" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r1M-59-re2">
-                                <rect key="frame" x="139" y="181" width="42" height="21"/>
+                                <rect key="frame" x="139" y="181" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="T6d-50-EgQ">
-                                <rect key="frame" x="139" y="210" width="42" height="21"/>
+                                <rect key="frame" x="139" y="210" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ac1-P0-Rfs">
-                                <rect key="frame" x="139" y="239" width="42" height="21"/>
+                                <rect key="frame" x="139" y="239" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -308,7 +308,6 @@
                 <relationship kind="outlet" name="followersCount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="followingCount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="profileName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profileNavigationItem" candidateClass="UINavigationItem"/>
                 <relationship kind="outlet" name="tweetsCount" candidateClass="UILabel"/>
             </relationships>
         </class>
