@@ -17,7 +17,6 @@
 		D09D63291528A37500B936D7 /* LTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63281528A37500B936D7 /* LTAAppDelegate.m */; };
 		D09D632C1528A37500B936D7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09D632A1528A37500B936D7 /* MainStoryboard.storyboard */; };
 		D09D632F1528A37500B936D7 /* LTATweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D632E1528A37500B936D7 /* LTATweetsViewController.m */; };
-		D09D63361528A37500B936D7 /* LTASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63351528A37500B936D7 /* LTASecondViewController.m */; };
 		D09D63421528A37600B936D7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63411528A37600B936D7 /* SenTestingKit.framework */; };
 		D09D63431528A37600B936D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63181528A37500B936D7 /* UIKit.framework */; };
 		D09D63441528A37600B936D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D631A1528A37500B936D7 /* Foundation.framework */; };
@@ -26,6 +25,7 @@
 		D09D63591528B4B900B936D7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D63581528B4B900B936D7 /* Accounts.framework */; };
 		D09D635B1528B4C200B936D7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09D635A1528B4C200B936D7 /* Twitter.framework */; };
 		D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D63621528B9FA00B936D7 /* LTATweetCell.m */; };
+		D09F387F154731AC004D564B /* LTASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F387E154731AC004D564B /* LTASearchViewController.m */; };
 		D0A8BD1E15444414000D114F /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A8BD1B15444414000D114F /* chat.png */; };
 		D0A8BD1F15444414000D114F /* magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A8BD1C15444414000D114F /* magnify.png */; };
 		D0A8BD2015444414000D114F /* persondot.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A8BD1D15444414000D114F /* persondot.png */; };
@@ -63,8 +63,6 @@
 		D09D632B1528A37500B936D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D09D632D1528A37500B936D7 /* LTATweetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTATweetsViewController.h; sourceTree = "<group>"; };
 		D09D632E1528A37500B936D7 /* LTATweetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTATweetsViewController.m; sourceTree = "<group>"; };
-		D09D63341528A37500B936D7 /* LTASecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTASecondViewController.h; sourceTree = "<group>"; };
-		D09D63351528A37500B936D7 /* LTASecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTASecondViewController.m; sourceTree = "<group>"; };
 		D09D63401528A37500B936D7 /* BCNTweetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCNTweetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09D63411528A37600B936D7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D09D63491528A37600B936D7 /* BCNTweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BCNTweetTests-Info.plist"; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		D09D635A1528B4C200B936D7 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		D09D63611528B9FA00B936D7 /* LTATweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTATweetCell.h; sourceTree = "<group>"; };
 		D09D63621528B9FA00B936D7 /* LTATweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTATweetCell.m; sourceTree = "<group>"; };
+		D09F387D154731AC004D564B /* LTASearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTASearchViewController.h; sourceTree = "<group>"; };
+		D09F387E154731AC004D564B /* LTASearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTASearchViewController.m; sourceTree = "<group>"; };
 		D0A8BD1B15444414000D114F /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		D0A8BD1C15444414000D114F /* magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnify.png; sourceTree = "<group>"; };
 		D0A8BD1D15444414000D114F /* persondot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = persondot.png; sourceTree = "<group>"; };
@@ -158,9 +158,9 @@
 				D01B5E73152F50C70085EB02 /* LTAMainListViewController.m */,
 				D09D63611528B9FA00B936D7 /* LTATweetCell.h */,
 				D09D63621528B9FA00B936D7 /* LTATweetCell.m */,
-				D09D63341528A37500B936D7 /* LTASecondViewController.h */,
-				D09D63351528A37500B936D7 /* LTASecondViewController.m */,
 				D01B5E76152F91B80085EB02 /* LTAProfileViewController.h */,
+				D09F387D154731AC004D564B /* LTASearchViewController.h */,
+				D09F387E154731AC004D564B /* LTASearchViewController.m */,
 				D01B5E77152F91B80085EB02 /* LTAProfileViewController.m */,
 				D09D631F1528A37500B936D7 /* Supporting Files */,
 			);
@@ -326,11 +326,11 @@
 				D09D63251528A37500B936D7 /* main.m in Sources */,
 				D09D63291528A37500B936D7 /* LTAAppDelegate.m in Sources */,
 				D09D632F1528A37500B936D7 /* LTATweetsViewController.m in Sources */,
-				D09D63361528A37500B936D7 /* LTASecondViewController.m in Sources */,
 				D09D63631528B9FA00B936D7 /* LTATweetCell.m in Sources */,
 				D0E6BD36152F4E0100282F52 /* LTAMentionsViewController.m in Sources */,
 				D01B5E74152F50C70085EB02 /* LTAMainListViewController.m in Sources */,
 				D01B5E78152F91B80085EB02 /* LTAProfileViewController.m in Sources */,
+				D09F387F154731AC004D564B /* LTASearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
